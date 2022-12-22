@@ -50,8 +50,8 @@ mainEnv = build('src/mitsuba/SConscript')
 # Build the COLLADA converter
 converter_objects = build('src/converter/SConscript', ['mainEnv'])
 
-# Build the Qt-based GUI binaries
-build('src/mtsgui/SConscript', ['mainEnv', 'converter_objects'], duplicate=True)
+# # Build the Qt-based GUI binaries
+# build('src/mtsgui/SConscript', ['mainEnv', 'converter_objects'], duplicate=True)
 
 env['SHLIBPREFIX']=''
 
