@@ -12,5 +12,5 @@ make install
 cd ../..
 
 # Compile Mitsuba 0.6.0
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/your/custom/path/collada-dom/build/install/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PWD/collada-dom/build/install/lib
 scons -j $NUM_CPUS
