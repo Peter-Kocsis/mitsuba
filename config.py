@@ -20,6 +20,7 @@ GLLIB          = ['GL', 'GLU', 'GLEWmx', 'Xxf86vm', 'X11']
 GLFLAGS        = ['-DGLEW_MX']
 BOOSTLIB       = ['boost_system', 'boost_filesystem', 'boost_thread']
 COLLADAINCLUDE = [f'{os.path.abspath(os.path.join(os.getcwd(), "..", "collada-dom", "build", "install"))}/include/collada-dom2.5', f'{os.path.abspath(os.path.join(os.getcwd(), "..", "collada-dom", "build", "install"))}/include/collada-dom2.5/1.4']
+COLLADALIBDIR  = [os.path.abspath(os.path.join(os.getcwd(), "..", "collada-dom", "build", "install", "lib"))]
 COLLADALIB     = ['collada-dom2.5-dp']
 FFTWLIB        = ['fftw3_threads', 'fftw3']
 
